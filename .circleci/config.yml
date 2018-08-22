@@ -28,9 +28,9 @@ jobs:
       - run: echo "A first hello world"
 
       # Setup remote docker
-      - setup_remote_docker
-          # Enable this flag to speed up image building
-          docker_layer_caching: true
+      # - setup_remote_docker
+      #     # Enable this flag to speed up image building
+      #     docker_layer_caching: true
 
       # - run:
       #     name: Install Docker Compose
