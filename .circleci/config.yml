@@ -21,6 +21,8 @@ jobs:
       - checkout
       - run: echo "A first hello world"
 
+      - setup_remote_docker
+
       # - run:
       #     name: Install Docker Compose
       #     command: |
