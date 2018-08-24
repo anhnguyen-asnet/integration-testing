@@ -2,8 +2,7 @@ version: "3"
 
 services:
     webapp:
-      image: docker/whalesay
-      command: ["cowsay", "ahihi"]
+      image: anhnguyenkim/docker-whale-example:develop
 
     db:
       image: postgres:9.6-alpine
