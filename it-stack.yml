@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    webapp:
+      image: anhnguyenkim/docker-whale-example:develop
+
+    api:
+      image: anhnguyenkim/docker-whale-example:master
+
+    db:
+      image: postgres:9.6-alpine
+      ports:
+          - "5432:5432"
