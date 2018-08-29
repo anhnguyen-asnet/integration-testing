@@ -31,7 +31,7 @@ jobs:
             - ${SSH_KEY}
       - run:
           name: checkout code
-          command: git clone git@github.com:anhnguyen-asnet/circleci-example.git
+          command: git clone -b ${CIRCLE_BRANCH} git@github.com:anhnguyen-asnet/circleci-example.git
 
       # - run:
       #     name: Run Postgres container
