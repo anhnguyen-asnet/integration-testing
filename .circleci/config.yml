@@ -26,9 +26,7 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello world"
-      - add_ssh_keys:
-          fingerprints:
-            - ${SSH_KEY}
+
       - run:
           name: checkout code
           command: git clone -b ${CIRCLE_BRANCH} git@github.com:anhnguyen-asnet/circleci-example.git
